@@ -13,6 +13,10 @@ export const Container = styled.div`
 `
 
 export const Form = styled.div`
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 20px;
   h2 {
     text-align: center;
@@ -31,12 +35,13 @@ export const Form = styled.div`
   }
 
   input {
-    width: 450px;
+    width: 100%;
+    max-width: 450px;
+
     padding-block: 20px;
     padding-inline: 30px;
-    border: none;
     margin-bottom: 30px;
-
+    border: none;
     font-size: 16px;
   }
 

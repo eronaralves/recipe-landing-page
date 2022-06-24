@@ -16,6 +16,7 @@ export const Content = styled.div`
   width: 100%;
   max-width: 1320px;
   height: 100%;
+  padding-inline: 20px;
 
   display: flex;
   justify-content: space-between;
@@ -36,6 +37,7 @@ export const Contact = styled.div`
 
 export const Copyright = styled.div`
   width: 100%;
+  padding-inline: 20px;
   background-color: #446061;
 
   p {
@@ -45,10 +47,25 @@ export const Copyright = styled.div`
     padding: 16px 0px;
     opacity: 0.5;
     color: #FFFFFF;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
   a {
     color: #FFFFFF;
     text-decoration: none;
+  }
+
+  @media(max-width: 630px) {
+    p,a {
+      font-size: 10px;
+    }
+  }
+
+  @media(max-width: 475px) {
+    p,a {
+      font-size: 6px;
+    }
   }
 `

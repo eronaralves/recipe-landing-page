@@ -1,6 +1,8 @@
 
 // Parte feita pelo Eronar
 
+import {FiMenu} from "react-icons/fi"
+
 // Images
 import Instagram from "../../assets/images/instagram.svg"
 import Facebook from "../../assets/images/facebook.svg"
@@ -26,6 +28,7 @@ export default function Footer() {
         </Contact>
         
         <div>
+          <FiMenu size={50}/>
           <Routes/>
         </div>
       </Content>

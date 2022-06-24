@@ -29,5 +29,11 @@ export const Header = styled.header`
       font-weight: 500;
       line-height: 191px;
     }
+
+    @media(max-width: 645px) {
+      h1 {
+        font-size: 60px;
+      }
+    }
   }
 `

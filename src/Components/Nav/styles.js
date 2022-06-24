@@ -5,7 +5,7 @@ width: 100%;
 max-width: 1320px;
 height: 72px;
 
-padding: 10px;
+padding-inline: 20px;
 margin: auto;
 
 display: flex;
@@ -16,6 +16,16 @@ h2 {
   font-size: 40px;
   font-weight: 600;
 }
+
+  svg {
+    display: none;
+  }
+
+  @media(max-width:685px) {
+    svg {
+      display: block;
+    }
+  }
 `
 
 export const ListRouter = styled.ul`
@@ -27,4 +37,9 @@ export const ListRouter = styled.ul`
   li {
     cursor: pointer;
   }
+
+  @media(max-width:685px) {
+    display: none;
+  }
+
 `
