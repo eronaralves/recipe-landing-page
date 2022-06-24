@@ -1,15 +1,23 @@
-import React from "react";
+import React from 'react'
 //Components
-import Header from "./Components/Header";
+import Header from './Components/Header'
 
-import styled, { createGlobalStyle } from "styled-components";
+import styled, { createGlobalStyle } from 'styled-components'
+import { ContentAbout } from './stylesApp/styles'
+
+//Components
+import About from "./Components/about"
+import Main from "./Components/main"
+import Subscribe from "./Components/Subscribe"
+import Footer from "./Components/Footer"
+
 
 const GlobalStyle = createGlobalStyle`
   * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Arial', sans-serif;
     color: #373737;
   }
 
@@ -18,26 +26,25 @@ const GlobalStyle = createGlobalStyle`
     height: 100vh;
     
   }
-`;
+`
 
 const Container = styled.div`
   width: 100%;
   height: 100vh;
-`;
+`
 
-const Content = styled.div`
-  width: 100%;
-  max-width: 1220px;
-  height: 100vh;
-`;
 
 export default function App() {
   return (
-    <Container>
-      <Content>
-        <GlobalStyle />
+    <>
+      <GlobalStyle/>
+      <Container>
         <Header />
-      </Content>
-    </Container>
-  );
+          <Main/>
+          <About />
+          <Subscribe/>
+          <Footer/>
+      </Container>
+    </>
+  )
 }
