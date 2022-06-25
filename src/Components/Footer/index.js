@@ -13,7 +13,7 @@ import {Container, Content, Contact, Copyright} from "./styles"
 
 //Components
 import Nav from "../Nav"
-import Routes from "../Nav/rotas"
+import Routes from "../Routes"
 
 export default function Footer() {
 
@@ -26,14 +26,11 @@ export default function Footer() {
           <img src={Facebook} alt="Logo do Facebook branco com fundo preto"/>
           <img src={Pinterest} alt="Logo do Pinterest branco com fundo preto"/>
         </Contact>
+        <Routes/>
         
-        <div>
-          <FiMenu size={50}/>
-          <Routes/>
-        </div>
       </Content>
       <Copyright>
-          <p>Layout produzido por Vai na Web para fins exclusivamente educacionais. Referência:<a href="https://br.pinterest.com/pin/AVuDlMAl4GsQiM6nijH9YbG9bsNKpompSEOEHzig6GJ58AnUtMkSy7k//" target="_blank">https://br.pinterest.com/pin/AVuDlMAl4GsQiM6nijH9YbG9bsNKpompSEOEHzig6GJ58AnUtMkSy7k/</a>
+          <p>Layout produzido por Vai na Web para fins exclusivamente educacionais. Referência:<a href="https://br.pinterest.com/pin/AVuDlMAl4GsQiM6nijH9YbG9bsNKpompSEOEHzig6GJ58AnUtMkSy7k//" target="_blank" rel="noreferrer">https://br.pinterest.com/pin/AVuDlMAl4GsQiM6nijH9YbG9bsNKpompSEOEHzig6GJ58AnUtMkSy7k/</a>
           </p>
       </Copyright>
     </Container>

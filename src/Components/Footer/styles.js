@@ -10,6 +10,12 @@ export const Container = styled.div`
   justify-content: space-between;
 
   background-color: #F2F4F1;
+
+  .teste {
+    svg {
+      display: none;
+    }
+  }
 `
 
 export const Content = styled.div`

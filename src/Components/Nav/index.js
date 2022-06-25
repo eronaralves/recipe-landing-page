@@ -7,14 +7,13 @@ import {FiMenu} from "react-icons/fi"
 import {ContainerNav} from "./styles"
 
 //Components
-import Routes from "./rotas"
+import Routes from "../Routes"
 
 export default function Nav() {
 
   return (
     <ContainerNav>
-      <h2>RC</h2>
-        <FiMenu size={25}/>  
+      <h2>RC</h2> 
         <Routes/>
     </ContainerNav>
   )

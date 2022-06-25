@@ -38,8 +38,19 @@ export const ListRouter = styled.ul`
     cursor: pointer;
   }
 
-  @media(max-width:685px) {
+  svg {
     display: none;
+  }
+
+  @media(max-width:685px) {
+    ul {
+      display: none;
+    }
+
+    svg {
+    display: block;
+    }
+
   }
 
 `
